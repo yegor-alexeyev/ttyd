@@ -186,7 +186,7 @@ export class ZmodemAddon extends Component<Props, State> implements ITerminalAdd
     private writeProgress(offer: Zmodem.Offer) {
         // const { terminal, bytesHuman } = this;
 
-        // const file = offer.get_details();
+        offer.get_details();
         // const name = file.name;
         // const size = file.size;
         // const offset = offer.get_offset();
