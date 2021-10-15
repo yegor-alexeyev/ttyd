@@ -184,15 +184,15 @@ export class ZmodemAddon extends Component<Props, State> implements ITerminalAdd
 
     @bind
     private writeProgress(offer: Zmodem.Offer) {
-        const { terminal, bytesHuman } = this;
+        // const { terminal, bytesHuman } = this;
 
-        const file = offer.get_details();
-        const name = file.name;
-        const size = file.size;
-        const offset = offer.get_offset();
-        const percent = ((100 * offset) / size).toFixed(2);
+        // const file = offer.get_details();
+        // const name = file.name;
+        // const size = file.size;
+        // const offset = offer.get_offset();
+        // const percent = ((100 * offset) / size).toFixed(2);
 
-        terminal.write(`${name} ${percent}% ${bytesHuman(offset, 2)}/${bytesHuman(size, 2)}\r`);
+        // terminal.write(`${name} ${percent}% ${bytesHuman(offset, 2)}/${bytesHuman(size, 2)}\r`);
     }
 
     private bytesHuman(bytes: any, precision: number): string {
